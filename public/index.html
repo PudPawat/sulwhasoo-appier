@@ -65,24 +65,16 @@
 
   <!-- AIQUA SDK -->
   <script type="text/javascript">
-    !function (q, g, r, a, p, h, js) {
-      if (q.qg) return;
-      js = q.qg = function () {
-        console.log(arguments);
+    !function(q,g,r,a,p,h,js) {
+      q.appier=q.qg;
+      if(q.qg)return;
+      js=q.appier=q.qg=function() {
         js.callmethod ? js.callmethod.call(js, arguments) : js.queue.push(arguments);
       };
-      js.queue = [];
-      p = g.createElement(r); p.async = !0; p.src = a; h = g.getElementsByTagName(r)[0];
-      h.parentNode.insertBefore(p, h);
-
-      console.log(window.QGSettings);
-      // window.QGSettings.push.requestSelf = true;
-      window.QGSettings['push']['requestSelf'] = true;
-      console.log("in the function",window.QGSettings);
-    }(window, document, 'script', 'https://cdn.qgr.ph/qgraph.54f567e3ef89096a7b68.js');
-    // }(window, document, 'script', './pixel.js');
-    
-    console.log("test ",window.QGSettings);
+      js.queue=[];
+      p=g.createElement(r);p.async=!0;p.src=a;h=g.getElementsByTagName(r)[0];
+      h.parentNode.insertBefore(p,h);
+    } (window,document,'script','https://cdn.qgr.ph/qgraph.ada0c478df180f4643a1.js');
   </script>
 
   <!-- Google Tag Manager -->
