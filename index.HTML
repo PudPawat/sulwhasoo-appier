@@ -1,0 +1,176 @@
+<html>
+    <script type="text/javascript">
+        !function(q,g,r,a,p,h,js) {
+          q.appier=q.qg;
+          if(q.qg)return;
+          js=q.appier=q.qg=function() {
+            js.callmethod ? js.callmethod.call(js, arguments) : js.queue.push(arguments);
+          };
+          js.queue=[];
+          p=g.createElement(r);p.async=!0;p.src=a;h=g.getElementsByTagName(r)[0];
+          h.parentNode.insertBefore(p,h);
+        } (window,document,'script','https://cdn.qgr.ph/qgraph.ada0c478df180f4643a1.js');
+      </script>    
+<script type="text/javascript" src="chrome-extension://ffljdddodmkedhkcjhpmdajhjdbkogke/js/datalayer-checker.js"></script><script type="text/javascript" src="chrome-extension://nomnoimacbncclfbnfaingniikblfbji/build/scripts/installDetector.js"></script><head><title></title><meta name="ROBOTS" content="INDEX,FOLLOW"><meta name="keywords" content=""><meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style class="main_style">
+.layout-canvas-a {
+background-color: #fff;
+border: none;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+padding: 0;
+width: 100%;
+}
+.layout-canvas-a > .header,
+.layout-canvas-a > .section,
+.layout-canvas-a > .footer {
+position: relative;
+overflow: hidden;
+width: 100%;
+word-wrap: break-word;
+}
+.layout-canvas-a > .section {
+margin: 10px 0;
+}
+.layout-canvas-a > .section > .columns {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+word-wrap: break-word;
+}
+body {
+color: #000;
+font-family: Arial;
+font-size: 12px;
+margin: 0 auto;
+max-width: 1280px;
+}
+@media only screen and (max-width: 480px) {
+.mobile-hidden {
+display: none !important;
+}
+.responsive-td {
+width: 100% !important;
+display: block !important;
+padding: 0 !important;
+}
+}
+.layout-canvas-a > .section > .columns {
+width: 100%;
+}
+
+</style>
+
+<script>
+        window.SBX_dlc=window.SBX_dlc||{};
+        window.SBX_dlc.settings=JSON.parse("{\"consoleLog\":false,\"eventColors\":true,\"eventCustomColors\":{\"custom1\":\"\",\"custom2\":\"\",\"custom3\":\"\"},\"gtmInjectId\":\"\",\"gtmInjectRule\":\"\",\"preventDefault\":false,\"jsonDefaultViewMode\":false}");
+    </script></head>
+<body>
+    <div class="layout layout-canvas-a">
+        <div class="header">
+            <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tbody><tr><td class="stylingblock-content-wrapper camarker-inner"></td></tr></tbody></table>
+        </div>
+        <div class="section">
+            <div class="columns col1">
+                <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tbody><tr><td class="stylingblock-content-wrapper camarker-inner">
+
+
+
+<title>Email Preferences
+</title>
+
+
+<div class="container">
+  <h1>Email Preferences
+  </h1>
+  <p>You have successfully unsubscribed. We kindly request your feedback to help us improve our communications
+  </p>
+  <br>
+  <form id = "unsub_form" class = "unsub_form" action="https://www.google.com" method="post">
+    <fieldset>
+      <h4 for="reasons" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Could you please tell us the reason for your unsubscribe?
+      </h4>
+      <input type="radio" name="reason" value="I am receiving too many emails from Laneige Singapore."> I am receiving too many emails from Sulwhasoo Singapore.
+      <br>
+      <input type="radio" name="reason" value="I don't think the content is relevant."> I don't think the content is relevant.
+      <br>
+      <input type="radio" name="reason" value="I accidentally unsubscribed."> I accidentally unsubscribed.
+      <br>
+      <input type="radio" name="reason" value="I am having difficulty viewing or receiving the email"> I am having difficulty viewing or receiving the email.
+      <br>
+      <input type="radio" name="reason" value="Other"> Other
+      <br>
+      <label for="other_reason">If Other, please specify:</label>
+      <br>
+      <textarea id="other_reason" name="other_reason" rows="4" cols="50"></textarea>
+      <br>
+      <br>
+      
+      <label for="unsuball" class="unsuball_">
+        <input type="checkbox" name="unsuball" checked=""> Unsubscribe me from all email communications
+      </label>
+      <br>
+      <!-- Hidden fields -->
+      <input type="hidden" name="subscriberkey" value="SG10531323">
+      <input type="hidden" name="email" value="kangnancy73@gmail.com">
+      <input type="hidden" name="jobid" value="82470">
+      <input type="hidden" name="batchid" value="1">
+      <input type="hidden" name="listid" value="138">
+      <input type="hidden" name="emailName" value="05_LN_Point Expiry_2401011">
+      <br>
+      <input type="submit" name="submit" value="Submit" class="submit_">
+    </fieldset>
+  </form>
+</div>
+
+
+</td></tr></tbody></table>
+            </div>
+        </div>
+        <div class="footer">
+            
+        </div>
+    </div>
+
+
+</body>
+<script>
+    const REDIRECT_URL = 'https://sulwhasoo-appier-mkbvm5x2j-pudpawats-projects.vercel.app/'; // Redirect URL
+
+document.getElementById('unsub_form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the form from submitting normally
+
+  // Capture form data
+  const formData = new FormData(this);
+
+  // Prepare a message to show the form data
+  reason = formData.get('reason');
+
+  // If 'Other' is selected, also show the specified reason
+  if (reason === 'Other') {
+    const otherReason = formData.get('other_reason');
+    reason += `: ${otherReason}`;
+  }
+
+
+  // Display the message in an alert
+//   alert(reason);
+    appier('identify', {'unsub_reason': reason})
+    console.log("updated unsub reason")
+    appier('identify', {'unsub_reason': reason})
+    console.log("updated unsub reason")
+    appier('identify', {'unsub_reason': reason})
+    console.log("updated unsub reason")
+  // Redirect to Google after showing the alert
+  setTimeout(() => {
+  window.location.href = "https://sg.sulwhasoo.com/" + '?aiq_id_reason_unsub=' + reason;
+}, 2000);
+   
+});
+    
+  </script>
+
+</html>
