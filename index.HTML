@@ -178,7 +178,7 @@ document.getElementById('unsub_form').addEventListener('submit', function(event)
     appier('identify', {'unsub_reason': reason})
     console.log("updated unsub reason")
 
-    function getEmailFromUrl(url) {
+    function getEMFromUrl(url) {
     // Create a new URL object
     var urlObj = new URL(url);
     
@@ -186,13 +186,13 @@ document.getElementById('unsub_form').addEventListener('submit', function(event)
     var params = new URLSearchParams(urlObj.search);
     
     // Extract the 'email' parameter
-    var email = params.get('email');
+    var em = params.get('email');
     
-    return decodeURIComponent(email);
+    return decodeURIComponent(em);
   }
   var doc_url = document.URL; 
-  var email1 = getEmailFromUrl(doc_url);
-  appier('event','unsub_reason_submitted', {"reason": reason, "email":email1 })
+  var em1 = getEmailFromUrl(doc_url);
+  appier('event','unsub_reason_submitted', {"reason": reason, "email":em1 })
     appier('identify', {'unsub_reason': reason})
     console.log("updated unsub reason")
     appier('identify', {'unsub_reason': reason})
