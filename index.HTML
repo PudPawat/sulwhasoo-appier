@@ -191,16 +191,18 @@ document.getElementById('unsub_form').addEventListener('submit', function(event)
     return decodeURIComponent(email);
   }
   var doc_url = document.URL; 
-  var email1 = getEmailFromUrl(doc_url)
+  var email1 = getEmailFromUrl(doc_url);
   appier('event','unsub_reason_submitted', {"reason": reason, "email":email1 })
     appier('identify', {'unsub_reason': reason})
     console.log("updated unsub reason")
     appier('identify', {'unsub_reason': reason})
     console.log("updated unsub reason")
   // Redirect to Google after showing the alert
+
+
   setTimeout(() => {
   window.location.href = "https://sg.sulwhasoo.com/" + '?aiq_id_reason_unsub=' + reason;
-}, 2000);
+}, 3000);
    
 });
     
